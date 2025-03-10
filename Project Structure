@@ -1,0 +1,15 @@
+egypt-internship-tracker/
+│── scraper/                 # Web scraping scripts
+│   ├── wuzzuf_scraper.py
+│   ├── linkedin_scraper.py
+│   ├── glassdoor_scraper.py
+│── notifier/                 # Notification system
+│   ├── telegram_bot.py
+│   ├── email_alerts.py
+│── data/                     # Store internship listings
+│   ├── internships.json
+│   ├── internships.csv
+│── app.py                    # Main execution file
+│── requirements.txt           # Dependencies (BeautifulSoup, Selenium, etc.)
+│── README.md                  # Project documentation
+│── .gitignore                 # Ignore unnecessary files
