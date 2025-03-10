@@ -1,0 +1,12 @@
+import requests
+from bs4 import BeautifulSoup
+
+URL = "https://wuzzuf.net/a/Software-Engineering-Intern---Internship-Jobs-in-Egypt"
+headers = {"User-Agent": "Mozilla/5.0"}
+
+response = requests.get(URL, headers=headers)
+soup = BeautifulSoup(response.text, "html.parser")
+
+jobs = soup.find_all("h2", class_="css-m604qf")
+for job in jobs:
+    print(job.text.strip())
